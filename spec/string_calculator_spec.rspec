@@ -1,0 +1,7 @@
+require_relative '../string_calculator'
+
+describe StringCalculator do
+	it "should have an add instance method" do
+		StringCalculator.new.should respond_to :add
+	end
+end
