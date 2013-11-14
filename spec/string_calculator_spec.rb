@@ -32,4 +32,10 @@ describe StringCalculator do
 			StringCalculator.homogenize("2\n3").should eq "2,3"
 		end
 	end
+
+	describe '.find_delimeter' do
+		it "should find a delimeter at the beginning of the summand string" do
+		  StringCalculator.find_delimeter("//hello\n23hello4").should eq 'hello'
+		end
+	end
 end
